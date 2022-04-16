@@ -16,38 +16,116 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins" , sans-serif;
+    box-sizing: border-box;
 
 }
 
-h1{
-    font-size: 48px;
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 30px;
     margin: 0;
     padding: 0;
     
 }
 
 aside {
+    box-sizing: border-box;
     float: right;
     height: 100%;
+    margin: 1ch 2ch 1ch 0;
+    min-width: 422px;
 }
-header{
+
+#login {
+    margin: none;
+    display: flex;
+    gap: 1ch;
+    background-color: white;
+}
+
+#login button{
+    border-radius: 15px;
+    border: none;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+
+#login .login{
+    background-color: var(--light-green);
+}
+
+#login .sign-out {
+    background-color: red;
+}
+
+#login .profile-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 180px;
+    background-color: var(--grey);
+}
+
+#friends{
+    border-radius: 15px;
+    background-color: var(--grey);
+    height: 100%;
+
+}
+
+#friends h2 {
+    text-align: center;
+}
+
+#friends-list{
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.friend {
+    display: flex;
+    align-items: center;
+}
+
+#friends-list .status{
+    height: 20px;
+    width: 20px;
+    border-radius: 180px;
+    margin: 1ch;
+}
+
+#friends-list .online {
+    background-color: var(--light-green);
+}
+
+#friends-list .offline {
+    background-color: #C4CDBD;
+}
+
+header {
     display: flex;
     justify-content: center;
     background-color: var(--light-blue);
     border-radius: 15px;
-    margin: 1ch;
-    padding: 1ch;
+    margin: 1ch 1.5ch 1ch 2ch;
+    /* padding: 1ch; */
 }
 
-section{
+section {
     background-color: var(--light-blue);
 }
 
-#message-window{
-    margin: 1ch;
+#message-window {
+    margin: 0ch 1.5ch 1ch 2ch;
     padding: 1ch;
     padding-left: 4ch;
     border-radius: 15px;
+    height: 100%;
 }
 
 .message{
@@ -65,8 +143,7 @@ section{
 #message-input{
     display: flex;
     gap: 1ch;
-    margin: 0 1ch;
-    /* padding: 1ch; */
+    margin: 0 1.5ch 1ch 2ch;
     background-color: white;
 }
 
@@ -90,3 +167,4 @@ section{
     border: none;
     
 }
+

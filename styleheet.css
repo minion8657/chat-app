@@ -37,8 +37,11 @@ aside {
     box-sizing: border-box;
     float: right;
     height: 100%;
-    margin: 1ch 2ch 1ch 0;
     min-width: 422px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 1ch 2ch 1ch 1ch;
 }
 
 #login {
@@ -112,8 +115,7 @@ header {
     justify-content: center;
     background-color: var(--light-blue);
     border-radius: 15px;
-    margin: 1ch 1.5ch 1ch 2ch;
-    /* padding: 1ch; */
+    margin: 1ch 0 1ch 2ch;
 }
 
 section {
@@ -121,7 +123,7 @@ section {
 }
 
 #message-window {
-    margin: 0ch 1.5ch 1ch 2ch;
+    margin: 0 0 1ch 2ch;
     padding: 1ch;
     padding-left: 4ch;
     border-radius: 15px;
@@ -143,7 +145,7 @@ section {
 #message-input{
     display: flex;
     gap: 1ch;
-    margin: 0 1.5ch 1ch 2ch;
+    margin: 0 0 1ch 2ch;    
     background-color: white;
 }
 

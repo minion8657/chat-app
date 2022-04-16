@@ -158,14 +158,17 @@ section {
 }
 
 #message-input img{
-    height: 30px;
-    width: 30px;
-    padding: 5px;
+    height: 20px;
+    width: 20px;
+    padding-left: 0;
+    vertical-align: middle;
 }
 
 #message-input button{
     background-color: var(--dark-green);
     border-radius: 180px;
+    height: 40px;
+    width: 60px;
     border: none;
     
 }
